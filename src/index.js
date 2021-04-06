@@ -1,4 +1,5 @@
 import React from 'react';
+import { CloudinaryContext } from 'cloudinary-react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -6,7 +7,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CloudinaryContext cloudName="jam3shalliday">
+      <App />
+    </CloudinaryContext>
   </React.StrictMode>,
   document.getElementById('root')
 );

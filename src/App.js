@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import { Image } from 'cloudinary-react';
+import './index.css'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Image publicId="725491f3b4f6cd02c3bbca8080e5c331_ggf0h6.jpg" >
+          
+        </Image>
     </div>
   );
 }
