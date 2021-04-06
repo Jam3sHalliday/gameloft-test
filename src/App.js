@@ -1,13 +1,14 @@
-import { Image } from 'cloudinary-react';
-import './index.css'
-import './App.css';
+import React from 'react';
+import "./index.css";
+import "./App.css";
+import Header from './components/Header';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
     <div className="App">
-        <Image publicId="725491f3b4f6cd02c3bbca8080e5c331_ggf0h6.jpg" >
-          
-        </Image>
+      <Header />
+      <Carousel />
     </div>
   );
 }

@@ -7,9 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CloudinaryContext cloudName="jam3shalliday">
       <App />
-    </CloudinaryContext>
   </React.StrictMode>,
   document.getElementById('root')
 );
