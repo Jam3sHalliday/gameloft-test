@@ -1,14 +1,23 @@
 import React from "react";
-import { Image } from 'cloudinary-react';
-
+import { Image, Transformation } from 'cloudinary-react';
+import Slider from 'react-slick';
 
 const Carousel = () => {
-    return (
-        <>
-            <Image style={{ width: '100%', height: '100%'}} cloudName="jam3shalliday" publicId="The_Oregon_Trail_Screen_02_EN_63734a52d9_gywypn.jpg" >
+    const sliderSettings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 3000
+    };
 
-            </Image>
-        </>
+    return (
+        <Slider { ...sliderSettings }>
+            <div className="h-screen">
+                <Image cloudName="jam3shalliday" publicId="The_Oregon_Trail_Screen_02_EN_63734a52d9_gywypn.jpg">
+                </Image>
+            </div>
+        </Slider>
     )
 }
 
