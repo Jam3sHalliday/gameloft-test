@@ -7,7 +7,7 @@ import Carousel from './components/Carousel';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header styles={{ position: 'fixed', top: 0, left: 0 }} />
       <Carousel />
     </div>
   );
