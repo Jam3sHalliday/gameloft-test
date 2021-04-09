@@ -15,6 +15,7 @@ module.exports = {
       red: colors.rose,
       pink: colors.fuchsia,
       realBlue: colors.blue,
+      white: colors.white
     },
     
   },
